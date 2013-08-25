@@ -152,8 +152,7 @@
 				ret = JSON.parse(res);
 				if (ret == 'true'){
 					ret = true;
-				}
-				if (ret == 'false'){
+				} else if (ret == 'false'){
 					ret = false;
 				}
 				if (parseFloat(ret) == ret && typeof ret != "object"){
